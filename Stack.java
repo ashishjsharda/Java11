@@ -24,10 +24,10 @@ public class Stack {
      */
     public int pop()
     {
-        if(list==null)
+        if(list.size()==0)
         {
             System.out.println("Stack is empty");
-            System.exit(0);
+            return 0;
         }
         return list.remove(list.size()-1);
     }
